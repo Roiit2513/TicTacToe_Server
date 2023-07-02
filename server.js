@@ -28,7 +28,7 @@ app.use(cors());
 const server = http.createServer(app);
 const io = new Server(server, {
     cors: {
-        origin: "https://tictactoe-mskw.onrender.com",
+        origin: "https://roiit2513.github.io/TicTacToe_chatting/",
         methods: ["GET", "POST"],
     }
 })
