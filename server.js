@@ -5,7 +5,7 @@ const { Server } = require("socket.io");
 
 const mongoose = require("mongoose");
 mongoose.set('strictQuery', true);
-mongoose.connect("mongodb+srv://Roiit_2513:Rohit_2513@cluster0.uaqm8fk.mongodb.net/roomDB", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true });
 // mongoose.connect("mongodb://127.0.0.1:27017/fruitsDB", { useNewUrlParser: true, useUnifiedTopology: true });
 
 const userSchema = mongoose.Schema({
